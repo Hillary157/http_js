@@ -24,7 +24,7 @@ const clientes=[
     }
 ]
 
-
+//tratamento de requisições GET
 app.get('/clientes', (req, resp, next) => {
     resp.json(clientes);
 });
@@ -41,4 +41,4 @@ app.post('/clientes',(req,res,next) =>{
 })
 
 const server = http.createServer(app);
-server.listen(porta);
+server.listen(3000);
